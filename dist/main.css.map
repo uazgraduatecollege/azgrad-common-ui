@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;AAIA;;;;AAIA","sources":["src/style.css"],"sourcesContent":["a {\n  text-decoration: none !important;\n}\n\nfooter {\n  font-size: smaller !important;\n}\n\nfooter a {\n  font-weight: normal !important;\n}\n\n"],"names":[],"version":3,"file":"main.css.map"}
