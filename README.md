@@ -21,10 +21,16 @@ cd azgrad-common-ui
 npm install
 ```
 
-## Run the Example
+## Run the example app
 
 ```sh
 npx parcel --dist-dir .example src/example/example.html
+```
+
+## Run tests
+
+```sh
+npm test
 ```
 
 ## Build for production
@@ -36,7 +42,7 @@ git commit -m "Build distribution"
 git push origin some-branch-name # etc
 ```
 
-## Developed By
+## Developed by
 
 University of Arizona Graduate College IT
 
