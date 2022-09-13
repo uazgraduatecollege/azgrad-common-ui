@@ -11,7 +11,19 @@ First install as a project dependency:
 npm install --save uazgraduatecollege/azgrad-common-ui
 ```
 
+Next, install recommended dependencies. These are optional, but should make developing your project a happier experience.
+
+```sh
+npm install --save-dev parcel process react-scripts @testing-library/jest-dom @testing-library/react
+```
+
 Use the example app (in `src/example`) as a guide to make use of Common UI components.
+
+1. Create `div`s with IDs `header-container`, `logo-container`, and `footer-container` in your project's main HTML file(s).
+2. Create an `app.js` file that will render the  **ArizonaBanner**, **Logo**, and **Footer** components.
+3. Call `app.js` just before the closing `</body>` tag of the page: `<script src="app.js"></script>`.
+
+Run or build your project with a parcel or whatever bundler you're using.
 
 ## Install & develop locally
 
