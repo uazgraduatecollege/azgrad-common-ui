@@ -15,6 +15,13 @@ AZ Grad Common UI includes the following components:
   - `grad-lokup-full-white`: A logo with University of Arizona _and_ Graduate College in white text (for dark backgrounds).
 - `SearchForm`: A form that triggers a search on the College's Google Custom Search Engine (CSE). Embedded in the `Footer`.
 
+Common UI also provides 3 image components that can be used in value of an image's `src` attribute.
+These correspond to the `Logo` component's variants.
+
+- `GradLockupBlue`
+- `GradLockupFullBlue`
+- `GradLockupFullWhite`
+
 ## Use Common UI in your own project
 
 First install as a project dependency:

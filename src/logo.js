@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/react-in-jsx-scope */
 
-import { GradLockupBlue, GradLockupFullBlue, GradLockupFullWhite } from "./img/images"
+import { GradLockupBlue, GradLockupFullBlue, GradLockupFullWhite } from './img/images'
 
 export function Logo (props) {
   let logo = ''
