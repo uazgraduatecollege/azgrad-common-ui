@@ -14,7 +14,7 @@ npm install --save uazgraduatecollege/azgrad-common-ui
 Next, install recommended dependencies. These are optional, but should make developing your project a happier experience.
 
 ```sh
-npm install --save-dev parcel process react-scripts @testing-library/jest-dom @testing-library/react
+npm install --save-dev parcel process react react-dom react-scripts @testing-library/jest-dom @testing-library/react
 ```
 
 Use the example app (in `src/example`) as a guide to make use of Common UI components.
