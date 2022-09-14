@@ -1,9 +1,25 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { Logo } from './logo'
+import { SearchForm } from './search-form'
+import links from './footer-links.json'
 import './style.css'
 
 export function Footer () {
-  const searchAction = process.env.SEARCH_URI || 'https://grad.arizona.edu/search'
+  const linksColumn1 = links.columns[0].map((next, i) => {
+    return (
+      <li key={i}>
+        <a href={next.url}>{next.text}</a>
+      </li>
+    )
+  })
+
+  const linksColumn2 = links.columns[1].map((next, i) => {
+    return (
+      <li key={i}>
+        <a href={next.url}>{next.text}</a>
+      </li>
+    )
+  })
 
   return (
     <footer id="footer" className="footer py-3 bg-warm-gray text-center">
@@ -20,60 +36,18 @@ export function Footer () {
 
           <div className="col-3 text-center">
             <ul className="list-unstyled">
-              <li>
-                <a href="https://grad.arizona.edu/catalog">Graduate Catalog</a>
-              </li>
-              <li>
-                <a href="https://grad.arizona.edu/admissions">Graduate Admissions</a>
-              </li>
-              <li>
-                <a href="https://grad.arizona.edu/gsas">Graduate Student Academic Services</a>
-              </li>
-              <li>
-                <a href="https://grad.arizona.edu/funding">Funding Resources</a>
-              </li>
-              <li>
-                <a href="https://grad.arizona.edu/general/policies">Policies</a>
-              </li>
+              {linksColumn1}
             </ul>
           </div>
 
           <div className="col-3 text-center">
             <ul className="list-unstyled">
-              <li>
-                <a href="https://gradcenter.arizona.edu">The Graduate Center</a>
-              </li>
-              <li>
-                <a href="https://apply.grad.arizona.edu">GradApp (Future Students)</a>
-              </li>
-              <li>
-                <a href="https://grad.arizona.edu/gradpath">GradPath (Current Students)</a>
-              </li>
-              <li>
-                <a href="https://grad.arizona.edu/tools/directory">Contact Us</a>
-              </li>
+              {linksColumn2}
             </ul>
           </div>
 
           <div className="col-3 text-right">
-            <form method="GET" action={ `${searchAction}` }>
-              <div className="input-group">
-                <input
-                  name="q"
-                  className="form-control"
-                  type="text"
-                  aria-label="Search all GRAD websites"
-                  aria-describedby="search-button"
-                  placeholder="Search all GRAD websites"
-                  onFocus={ () => { this.placeholder = '' }}
-                  onBlur={ () => { this.placeholder = 'Search all GRAD websites' }}
-                />
-                <button className="btn btn-sm btn-red" type="submit" id="search-button">
-                  <i className="fas fa-search" aria-hidden="true"></i>
-                  <span className="sr-only">Search</span>
-                </button>
-              </div>
-            </form>
+            <SearchForm />
 
             <ul className="list-inline mt-3">
               <li className="d-inline-block text-size-h3 p-1">

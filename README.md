@@ -36,7 +36,7 @@ npm install
 ## Run the example app
 
 ```sh
-npx parcel --dist-dir .example src/example/example.html
+npx run example
 ```
 
 ## Run tests

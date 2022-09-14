@@ -9,6 +9,7 @@
   "module": "dist/module.js",
   "scripts": {
     "build": "parcel build",
+    "example": "parcel --dist-dir .example src/example/example.html",
     "test": "react-scripts test"
   },
   "contributors": [
