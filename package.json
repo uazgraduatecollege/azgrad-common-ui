@@ -1,0 +1,40 @@
+{
+  "name": "azgrad-common-ui",
+  "version": "1.0.0",
+  "description": "Common UI components for UArizona Graduate College web projects. Build in React JS.",
+  "source": [
+    "src/index.js"
+  ],
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "scripts": {
+    "build": "parcel build",
+    "example": "parcel --dist-dir .example src/example/example.html",
+    "test": "react-scripts test"
+  },
+  "contributors": [
+    "Patrick Barabe <pbarabe@arizona.edu>"
+  ],
+  "bugs": {
+    "url": "https://gitlab.grad.arizona.edu/web-utils/ui/azgrad-common-ui/-/issues",
+    "email": "help@grad.arizona.edu"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "eslint": "^8.23.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "eslint-plugin-react": "^7.31.2",
+    "parcel": "^2.7.0",
+    "process": "^0.11.10",
+    "react-scripts": "^5.0.1"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
