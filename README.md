@@ -1,7 +1,19 @@
 # AZ Grad Common UI Resources
 
-Reusable React components, CSS, and JS resources for Graduate College web projects
+Reusable React components, CSS, and JS resources for Graduate College web projects,
 especially apps based on [Arizona Bootstrap](https://digital.arizona.edu/arizona-bootstrap/).
+
+## About
+
+AZ Grad Common UI includes the following components:
+
+- `ArizonaBannner`: The red banner with the UArizona logo for the top of the page
+- `Footer`: A fully developed footer for Graduate College websites.
+- `Logo`: Provides a Graduate College logo using any of 3 variants:
+  - `grad-lockup-blue`: A logo with "Graduate College" in blue text (default).
+  - `grad-lokup-full-blue`: A logo with University of Arizona _and_ Graduate College in blue text (for light backgrounds).
+  - `grad-lokup-full-white`: A logo with University of Arizona _and_ Graduate College in white text (for dark backgrounds).
+- `SearchForm`: A form that triggers a search on the College's Google Custom Search Engine (CSE). Embedded in the `Footer`.
 
 ## Use Common UI in your own project
 
