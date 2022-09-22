@@ -10,6 +10,7 @@
   "scripts": {
     "build": "parcel build",
     "example": "parcel --dist-dir .example src/example/example.html",
+    "prepare": "parcel build",
     "test": "react-scripts test"
   },
   "contributors": [
