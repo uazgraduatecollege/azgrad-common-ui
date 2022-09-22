@@ -110,7 +110,7 @@ function $c7ffc7dcc5c0de04$export$5bc6c90a92437c7d() {
 
 
 var $0a7cae0c560185bf$exports = {};
-$0a7cae0c560185bf$exports = JSON.parse('{"columns":[[{"url":"https://grad.arizona.edu/catalog","text":"Graduate Catalog"},{"url":"https://grad.arizona.edu/admissions","text":"Graduate Admissions"},{"url":"https://grad.arizona.edu/gsas","text":"Graduate Student Academic Services"},{"url":"https://grad.arizona.edu/funding","text":"Funding Resources"},{"url":"https://grad.arizona.edu/general/policies","text":"Policies"}],[{"url":"https://gradcenter.arizona.edu","text":"The Graduate Center"},{"url":"https://apply.grad.arizona.edu","text":"GradApp (Future Students)"},{"url":"https://apply.grad.arizona.edu","text":"GradApp (Future Students)"},{"url":"https://grad.arizona.edu/tools/directory","text":"Contact Us"}]]}');
+$0a7cae0c560185bf$exports = JSON.parse('{"columns":[[{"url":"https://grad.arizona.edu/catalog","text":"Graduate Catalog"},{"url":"https://grad.arizona.edu/admissions","text":"Graduate Admissions"},{"url":"https://grad.arizona.edu/gsas","text":"Graduate Student Academic Services"},{"url":"https://grad.arizona.edu/funding","text":"Funding Resources"},{"url":"https://grad.arizona.edu/general/policies","text":"Policies"}],[{"url":"https://gradcenter.arizona.edu","text":"The Graduate Center"},{"url":"https://apply.grad.arizona.edu","text":"GradApp (Future Students)"},{"url":"https://grad.arizona.edu/gradpath","text":"GradPath (Current Students)"},{"url":"https://grad.arizona.edu/tools/directory","text":"Contact Us"}]]}');
 
 
 
