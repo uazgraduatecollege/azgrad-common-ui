@@ -1,5 +1,5 @@
 {
-  "name": "azgrad-common-ui",
+  "name": "@uazgraduatecollege/azgrad-common-ui",
   "version": "1.0.0",
   "description": "Common UI components for UArizona Graduate College web projects. Build in React JS.",
   "source": [
