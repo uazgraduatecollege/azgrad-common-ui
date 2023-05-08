@@ -25,7 +25,7 @@ export function Footer () {
     <footer id="footer" className="footer py-3 bg-warm-gray text-center">
       <div className="container py-4">
         <div className="row">
-          <div className="col-3 text-left">
+          <div className="col-sm-3 text-left">
             <a href="https://grad.arizona.edu/">
               <Logo
                 className="img-fluid center-block"
@@ -34,19 +34,19 @@ export function Footer () {
             </a>
           </div>
 
-          <div className="col-3 text-center">
+          <div className="col-sm-3 text-center">
             <ul className="list-unstyled">
               {linksColumn1}
             </ul>
           </div>
 
-          <div className="col-3 text-center">
+          <div className="col-sm-3 text-center">
             <ul className="list-unstyled">
               {linksColumn2}
             </ul>
           </div>
 
-          <div className="col-3 text-right">
+          <div className="col-sm-3 text-right">
             <SearchForm />
 
             <ul className="list-inline mt-3">
