@@ -1,6 +1,10 @@
 {
   "name": "@uazgraduatecollege/azgrad-common-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "repository": "https://github.com/uazgraduatecollege/azgrad-common-ui.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "description": "Common UI components for UArizona Graduate College web projects. Build in React JS.",
   "source": [
     "src/index.js"
