@@ -1,6 +1,6 @@
 {
   "name": "@uazgraduatecollege/azgrad-common-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common UI components for UArizona Graduate College web projects. Build in React JS.",
   "source": [
     "src/index.js"
@@ -23,14 +23,14 @@
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
+    "@testing-library/react": "^14.0.0",
     "eslint": "^8.23.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.2.5",
     "eslint-plugin-promise": "^6.0.1",
     "eslint-plugin-react": "^7.31.2",
-    "parcel": "^2.7.0",
+    "parcel": "^2.8.3",
     "process": "^0.11.10",
     "react-scripts": "^5.0.1"
   },
