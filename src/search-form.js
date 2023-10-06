@@ -16,9 +16,10 @@ export function SearchForm () {
           onFocus={ () => { this.placeholder = '' }}
           onBlur={ () => { this.placeholder = 'Search all GRAD websites' }}
         />
-        <button className="btn btn-sm btn-red" type="submit" id="search-button">
-          <i className="fas fa-search" aria-hidden="true"></i>
-          <span className="sr-only">Search</span>
+        <button className="btn btn-sm btn-red pb-0" type="submit" id="search-button">
+          <span className="material-icons-sharp">
+            search
+          </span>
         </button>
       </div>
     </form>
