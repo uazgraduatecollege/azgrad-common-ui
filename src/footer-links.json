@@ -2,10 +2,6 @@
   "columns": [
     [
       {
-        "url": "https://grad.arizona.edu/catalog",
-        "text": "Graduate Catalog"
-      },
-      {
         "url": "https://grad.arizona.edu/admissions",
         "text": "Graduate Admissions"
       },
@@ -18,7 +14,7 @@
         "text": "Funding Resources"
       },
       {
-        "url": "https://grad.arizona.edu/general/policies",
+        "url": "https://grad.arizona.edu/policies",
         "text": "Policies"
       }
     ],
@@ -36,7 +32,7 @@
         "text": "GradPath (Current Students)"
       },
       {
-        "url": "https://grad.arizona.edu/tools/directory",
+        "url": "https://grad.arizona.edu/about/contact-us",
         "text": "Contact Us"
       }
     ]
