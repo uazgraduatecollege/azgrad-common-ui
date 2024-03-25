@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { Logo } from './logo'
 import { SearchForm } from './search-form'
 import links from './footer-links.json'

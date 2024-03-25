@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import './style.css'
 
 export function ArizonaBanner () {

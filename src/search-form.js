@@ -1,5 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
-
 export function SearchForm () {
   const searchAction = process.env.SEARCH_URI || 'https://grad.arizona.edu/search'
 
