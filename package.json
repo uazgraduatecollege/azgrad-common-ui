@@ -1,6 +1,6 @@
 {
   "name": "@uazgraduatecollege/azgrad-common-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "https://github.com/uazgraduatecollege/azgrad-common-ui.git",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -26,14 +26,14 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.1.3",
-    "@testing-library/react": "^14.0.0",
-    "eslint": "^8.23.0",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.2",
+    "eslint": "^8.57.0",
     "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.0.1",
-    "eslint-plugin-react": "^7.31.2",
+    "eslint-plugin-react": "^7.34.1",
     "parcel": "^2.9.3",
     "process": "^0.11.10",
     "react-scripts": "^5.0.1"
