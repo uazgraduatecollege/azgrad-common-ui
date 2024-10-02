@@ -52,21 +52,15 @@ export function Footer () {
 
             <ul className="list-inline mt-3">
               <li className="d-inline-block text-size-h3 p-1">
-                <a href="https://www.facebook.com/UAGradCollege">
-                  <i className="az-icon-facebook"></i>
-                  <span className="sr-only">Facebook</span>
-                </a>
-              </li>
-              <li className="d-inline-block text-size-h3 p-1">
-                <a href="https://twitter.com/uagradcollege">
-                  <i className="az-icon-twitter"></i>
-                  <span className="sr-only">Twitter</span>
-                </a>
-              </li>
-              <li className="d-inline-block text-size-h3 p-1">
-                <a href="https://instagram.com/uagradcat">
+                <a href="https://www.instagram.com/uagradcollege">
                   <i className="az-icon-instagram"></i>
                   <span className="sr-only">Instagram</span>
+                </a>
+              </li>
+              <li className="d-inline-block text-size-h3 p-1">
+                <a href="https://www.linkedin.com/school/university-of-arizona-graduate-college/">
+                  <i className="az-icon-linkedin"></i>
+                  <span className="sr-only">LinkedIn</span>
                 </a>
               </li>
             </ul>
