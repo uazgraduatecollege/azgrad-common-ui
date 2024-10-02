@@ -1,7 +1,10 @@
 {
   "name": "@uazgraduatecollege/azgrad-common-ui",
   "version": "1.0.6",
-  "repository": "https://github.com/uazgraduatecollege/azgrad-common-ui.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uazgraduatecollege/azgrad-common-ui.git"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
