@@ -20,6 +20,8 @@ export function Footer () {
     )
   })
 
+  const year = new Date().getFullYear()
+
   return (
     <footer id="footer" className="footer py-3 bg-warm-gray text-center">
       <div className="container py-4">
@@ -83,12 +85,14 @@ export function Footer () {
 
         <div className="row">
           <div className="col-6 text-left align-bottom">
-            © 2022 Arizona Board of Regents on behalf of the University of Arizona
+            © {year} Arizona Board of Regents on behalf of the University of Arizona
           </div>
           <div className="col-6 text-right">
             <a className="ua-privacy" rel="external" href="https://grad.arizona.edu/equity">Arizona&#39;s Commitment to Equity</a>
             <br />
             <a className="ua-privacy" rel="external" href="https://www.arizona.edu/information-security-privacy">University Information Security &amp; Privacy</a>
+            <br />
+            <a className="ua-privacy" rel="external" href="https://clery.arizona.edu/asr">Annual Security Report</a>
           </div>
         </div>
       </div>
