@@ -20,6 +20,8 @@ export function Footer () {
     )
   })
 
+  const year = new Date().getFullYear()
+
   return (
     <footer id="footer" className="footer py-3 bg-warm-gray text-center">
       <div className="container py-4">
@@ -50,21 +52,15 @@ export function Footer () {
 
             <ul className="list-inline mt-3">
               <li className="d-inline-block text-size-h3 p-1">
-                <a href="https://www.facebook.com/UAGradCollege">
-                  <i className="az-icon-facebook"></i>
-                  <span className="sr-only">Facebook</span>
-                </a>
-              </li>
-              <li className="d-inline-block text-size-h3 p-1">
-                <a href="https://twitter.com/uagradcollege">
-                  <i className="az-icon-twitter"></i>
-                  <span className="sr-only">Twitter</span>
-                </a>
-              </li>
-              <li className="d-inline-block text-size-h3 p-1">
-                <a href="https://instagram.com/uagradcat">
+                <a href="https://www.instagram.com/uagradcollege">
                   <i className="az-icon-instagram"></i>
                   <span className="sr-only">Instagram</span>
+                </a>
+              </li>
+              <li className="d-inline-block text-size-h3 p-1">
+                <a href="https://www.linkedin.com/school/university-of-arizona-graduate-college/">
+                  <i className="az-icon-linkedin"></i>
+                  <span className="sr-only">LinkedIn</span>
                 </a>
               </li>
             </ul>
@@ -83,12 +79,14 @@ export function Footer () {
 
         <div className="row">
           <div className="col-6 text-left align-bottom">
-            © 2022 Arizona Board of Regents on behalf of the University of Arizona
+            © {year} Arizona Board of Regents on behalf of the University of Arizona
           </div>
           <div className="col-6 text-right">
             <a className="ua-privacy" rel="external" href="https://grad.arizona.edu/equity">Arizona&#39;s Commitment to Equity</a>
             <br />
             <a className="ua-privacy" rel="external" href="https://www.arizona.edu/information-security-privacy">University Information Security &amp; Privacy</a>
+            <br />
+            <a className="ua-privacy" rel="external" href="https://clery.arizona.edu/asr">Annual Security Report</a>
           </div>
         </div>
       </div>
