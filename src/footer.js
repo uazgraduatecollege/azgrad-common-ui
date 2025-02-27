@@ -71,7 +71,11 @@ export function Footer () {
 
         <div className="row text-center">
           <div className="col-12">
-            <i>We respectfully acknowledge the University of Arizona is on the land and territories of Indigenous peoples. Today, Arizona is home to 22 federally recognized tribes, with Tucson being home to the O’odham and the Yaqui. Committed to diversity and inclusion, the University strives to build sustainable relationships with sovereign Native Nations and Indigenous communities through education offerings, partnerships, and community service.</i>
+            <i>
+              We respectfully acknowledge <a href="https://www.arizona.edu/university-arizona-land-acknowledgment" target="_blank">the University of Arizona is on the land and territories of Indigenous peoples</a>.
+              Today, Arizona is home to 22 federally recognized tribes, with Tucson being home to the O’odham and the Yaqui.
+              The University strives to build sustainable relationships with sovereign Native Nations and Indigenous communities through education offerings, partnerships, and community service.
+            </i>
           </div>
         </div>
 
@@ -82,8 +86,6 @@ export function Footer () {
             © {year} Arizona Board of Regents on behalf of the University of Arizona
           </div>
           <div className="col-6 text-right">
-            <a className="ua-privacy" rel="external" href="https://grad.arizona.edu/equity">Arizona&#39;s Commitment to Equity</a>
-            <br />
             <a className="ua-privacy" rel="external" href="https://www.arizona.edu/information-security-privacy">University Information Security &amp; Privacy</a>
             <br />
             <a className="ua-privacy" rel="external" href="https://clery.arizona.edu/asr">Annual Security Report</a>
