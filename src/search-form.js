@@ -15,7 +15,7 @@ export function SearchForm () {
           onBlur={ () => { this.placeholder = 'Search all GRAD websites' }}
         />
         <button className="btn btn-sm btn-red pb-0" type="submit" id="search-button">
-          <span className="material-icons-sharp">
+          <span className="material-symbols-rounded">
             search
           </span>
         </button>

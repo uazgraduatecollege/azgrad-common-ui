@@ -2,7 +2,7 @@ import './style.css'
 
 export function ArizonaBanner () {
   return (
-    <header className="bg-red arizona-header" id="header_arizona">
+    <header className="text-bg-red arizona-header" id="header_arizona">
       <div className="container">
         <div className="row">
           <a

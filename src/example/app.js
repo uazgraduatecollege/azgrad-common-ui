@@ -6,7 +6,7 @@ import { createRoot } from 'react-dom/client'
  * a real client app would include from the npm dependency.
  *
  * Eg.
- * `import { ArizonaBanner, Footer, Logo } from 'uazgraduatecollege/azgrad-common-ui'
+ * import { ArizonaBanner, Footer, Logo } from 'uazgraduatecollege/azgrad-common-ui'
  */
 import { ArizonaBanner, Footer, Logo } from '../index'
 
