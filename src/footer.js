@@ -1,11 +1,11 @@
 import { Logo } from './logo'
 import { SearchForm } from './search-form'
-import links from './footer-links.json'
+import footerLinks from './footer-links.json'
 import './style.css'
 
 export function Footer () {
-  const essentialLinks = links.essentialLinks.map((item) => {
-    return item.map((link, i) => {
+  const essentialLinks = footerLinks.essentialLinks.map((linkObj) => {
+    return linkObj.map((link, i) => {
       return (
         <li key={i} className="nav-item">
           <a href={link.url} className="bg-transparent nav-link">{link.text}</a>
@@ -14,8 +14,8 @@ export function Footer () {
     })
   })
 
-  const informationForLinks = links.informationFor.map((item) => {
-    return item.map((link, i) => {
+  const informationForLinks = footerLinks.informationFor.map((linkObj) => {
+    return linkObj.map((link, i) => {
       return (
         <li key={i} className="d-flex px-0 mb-1 mb-md-2 nav-item">
           <a href={link.url} className="bg-transparent nav-link">{link.text}</a>
@@ -24,8 +24,8 @@ export function Footer () {
     })
   })
 
-  const topicsLinks = links.topics.map((item) => {
-    return item.map((link, i) => {
+  const topicsLinks = footerLinks.topics.map((linkObj) => {
+    return linkObj.map((link, i) => {
       return (
         <li key={i} className="d-flex px-0 mb-1 mb-md-2 nav-item">
           <a href={link.url} className="bg-transparent nav-link">{link.text}</a>
@@ -34,8 +34,8 @@ export function Footer () {
     })
   })
 
-  const resourcesLinks = links.resources.map((item) => {
-    return item.map((link, i) => {
+  const resourcesLinks = footerLinks.resources.map((linkObj) => {
+    return linkObj.map((link, i) => {
       return (
         <li key={i} className="d-flex px-0 mb-1 mb-md-2 nav-item">
           <a href={link.url} className="bg-transparent nav-link">{link.text}</a>
@@ -44,8 +44,8 @@ export function Footer () {
     })
   })
 
-  const socialMedia = links.socialMedia.map((item) => {
-    return item.map((link, i) => {
+  const socialMediaLinks = footerLinks.socialMedia.map((linkObj) => {
+    return linkObj.map((link, i) => {
       return (
         <li key={i} className="d-flex px-0 mb-1 mb-md-2 nav-item">
           <a href={link.url} className={link.icon + ' icon-link bg-transparent nav-link'}>{link.text}</a>
@@ -55,6 +55,7 @@ export function Footer () {
   })
 
   const year = new Date().getFullYear()
+
   return (
     <footer id="footer" className="footer py-3 text-bg-warm-gray">
       <div className="container py-4">
@@ -107,7 +108,7 @@ export function Footer () {
               <nav role="navigation" aria-labelledby="block-az-barrio-footer-menu-social-media-menu" id="block-az-barrio-footer-menu-social-media" className="col-12 col-sm-6 col-md-2">
                 <h2 className="h6 mt-md-3 text-uppercase" id="block-az-barrio-footer-menu-social-media-menu">Connect</h2>
                 <ul className="nav flex-column nav-utility clearfix">
-                  {socialMedia}
+                  {socialMediaLinks}
                 </ul>
               </nav>
             </div>
