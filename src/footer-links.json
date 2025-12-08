@@ -1,39 +1,103 @@
 {
-  "columns": [
+  "essentialLinks": [
     [
+      {
+        "url": "https://cirt.arizona.edu",
+        "text": "Emergency Information"
+      },
+      {
+        "url": "https://www.arizona.edu/nondiscrimination",
+        "text": "Nondiscrimination"
+      },
+      {
+        "url": "https://safety.arizona.edu",
+        "text": "Campus Safety"
+      },
+      {
+        "url": "https://www.arizona.edu/campus-accessibility",
+        "text": "Campus Accessibility"
+      }
+    ]
+  ],
+  "informationFor": [
+    [
+      {
+        "url": "https://grad.arizona.edu/futurestudents",
+        "text": "Future Students"
+      },
+      {
+        "url": "https://grad.arizona.edu/new-and-current-students",
+        "text": "Current Students"
+      },
+      {
+        "url": "https://grad.arizona.edu/faculty-and-staff",
+        "text": "Faculty & Staff"
+      },
+      {
+        "url": "https://grad.arizona.edu/donate",
+        "text": "Alumni & Donors"
+      }
+    ]
+  ],
+  "topics":[
+    [
+      {
+        "url": "https://grad.arizona.edu/funding",
+        "text": "Funding for Graduate Students"
+      },
+      {
+        "url": "https://grad.arizona.edu/gaships",
+        "text": "GAships"
+      },
+      {
+        "url": "https://apply.grad.arizona.edu/",
+        "text": "GradApp"
+      },
+      {
+        "url": "https://grad.arizona.edu/gradpath",
+        "text": "GradPath"
+      },
       {
         "url": "https://grad.arizona.edu/admissions",
         "text": "Graduate Admissions"
       },
       {
         "url": "https://grad.arizona.edu/degree-services",
-        "text": "Degree Services"
-      },
-      {
-        "url": "https://grad.arizona.edu/funding",
-        "text": "Funding Resources"
-      },
-      {
-        "url": "https://grad.arizona.edu/policies",
-        "text": "Policies"
+        "text": "Graduate Degree Services"
       }
-    ],
+    ]
+  ],
+  "resources": [
     [
       {
-        "url": "https://gradcenter.arizona.edu",
-        "text": "The Graduate Center"
-      },
-      {
-        "url": "https://apply.grad.arizona.edu",
-        "text": "GradApp (Future Students)"
-      },
-      {
-        "url": "https://grad.arizona.edu/gradpath",
-        "text": "GradPath (Current Students)"
+        "url": "https://grad.arizona.edu/about",
+        "text": "About"
       },
       {
         "url": "https://grad.arizona.edu/contact",
         "text": "Contact Us"
+      },
+      {
+        "url": "https://grad.arizona.edu/about/staff-directory",
+        "text": "Staff Directory"
+      },
+      {
+        "url": "https://gradcenter.arizona.edu/",
+        "text": "The Graduate Center"
+      }
+    ]
+  ],
+  "socialMedia": [
+    [
+      {
+        "url": "https://www.instagram.com/uagradcollege/",
+        "text": "Instagram",
+        "icon": "az-icon-instagram"
+      },
+      {
+        "url": "https://www.linkedin.com/school/university-of-arizona-graduate-college/",
+        "text": "LinkedIn",
+        "icon": "az-icon-linkedin"
       }
     ]
   ]
