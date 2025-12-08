@@ -54,7 +54,7 @@
         "text": "GradApp"
       },
       {
-        "url": "https://grad.arizona.edu/contact",
+        "url": "https://grad.arizona.edu/gradpath",
         "text": "GradPath"
       },
       {
@@ -70,11 +70,11 @@
   "resources": [
     [
       {
-        "url": "https://gradcenter.arizona.edu/about",
+        "url": "https://grad.arizona.edu/about",
         "text": "About"
       },
       {
-        "url": "https://grad.arizona.edu/about/contact-us",
+        "url": "https://grad.arizona.edu/contact",
         "text": "Contact Us"
       },
       {
@@ -90,7 +90,7 @@
   "socialMedia": [
     [
       {
-        "url": "https://instagram.com/uagradcoll/",
+        "url": "https://www.instagram.com/uagradcollege/",
         "text": "Instagram",
         "icon": "az-icon-instagram"
       },
