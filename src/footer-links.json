@@ -2,20 +2,20 @@
   "essentialLinks": [
     [
       {
-        "url": "https://cirt.arizona.edu",
-        "text": "Emergency Information"
-      },
-      {
-        "url": "https://www.arizona.edu/nondiscrimination",
-        "text": "Nondiscrimination"
+        "url": "https://www.arizona.edu/campus-accessibility",
+        "text": "Campus Accessibility"
       },
       {
         "url": "https://safety.arizona.edu",
         "text": "Campus Safety"
       },
       {
-        "url": "https://www.arizona.edu/campus-accessibility",
-        "text": "Campus Accessibility"
+        "url": "https://cirt.arizona.edu",
+        "text": "Emergency Information"
+      },
+      {
+        "url": "https://www.arizona.edu/nondiscrimination",
+        "text": "Nondiscrimination"
       }
     ]
   ],
