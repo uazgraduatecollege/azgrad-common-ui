@@ -93,20 +93,20 @@ export function Footer () {
                   {informationForLinks}
                 </ul>
               </nav>
-              <nav role="navigation" aria-labelledby="block-az-barrio-footer-menu-info-menu" id="block-az-barrio-footer-menu-info" className="col-12 col-sm-6 col-md-5">
-                <h2 className="h6 mt-md-3 text-uppercase" id="block-az-barrio-footer-menu-info-menu">Topics</h2>
+              <nav role="navigation" aria-labelledby="block-az-barrio-footer-menu-topics-menu" id="block-az-barrio-footer-menu-info" className="col-12 col-sm-6 col-md-5">
+                <h2 className="h6 mt-md-3 text-uppercase" id="block-az-barrio-footer-menu-topics-menu">Topics</h2>
                 <ul className="split-md-2-col nav flex-column nav-utility clearfix">
                   {topicsLinks}
                 </ul>
               </nav>
-              <nav role="navigation" aria-labelledby="block-az-barrio-footer-menu-info-menu" id="block-az-barrio-footer-menu-info" className="col-12 col-sm-6 col-md-2">
-                <h2 className="h6 mt-md-3 text-uppercase" id="block-az-barrio-footer-menu-info-menu">Resources</h2>
+              <nav role="navigation" aria-labelledby="block-az-barrio-footer-menu-resources-menu" id="block-az-barrio-footer-menu-info" className="col-12 col-sm-6 col-md-2">
+                <h2 className="h6 mt-md-3 text-uppercase" id="block-az-barrio-footer-menu-resources-menu">Resources</h2>
                 <ul className="nav flex-column nav-utility clearfix">
                   {resourcesLinks}
                 </ul>
               </nav>
-              <nav role="navigation" aria-labelledby="block-az-barrio-footer-menu-social-media-menu" id="block-az-barrio-footer-menu-social-media" className="col-12 col-sm-6 col-md-2">
-                <h2 className="h6 mt-md-3 text-uppercase" id="block-az-barrio-footer-menu-social-media-menu">Connect</h2>
+              <nav role="navigation" aria-labelledby="block-az-barrio-footer-menu-socialmedia-menu" id="block-az-barrio-footer-menu-social-media" className="col-12 col-sm-6 col-md-2">
+                <h2 className="h6 mt-md-3 text-uppercase" id="block-az-barrio-footer-menu-socialmedia-menu">Connect</h2>
                 <ul className="nav flex-column nav-utility clearfix">
                   {socialMediaLinks}
                 </ul>
@@ -128,7 +128,7 @@ export function Footer () {
 
         <div className="row">
           <div className="col-6 text-start align-bottom">
-            © {year} Arizona Board of Regents on behalf of <a href="https://www.arizona.edu/">The University of Arizona</a>
+            © {year} Arizona Board of Regents on behalf of <a className="ua-privacy link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.arizona.edu/">The University of Arizona</a>
           </div>
           <div className="col-6 text-end">
             <a className="ua-privacy link-underline link-underline-opacity-0 link-underline-opacity-75-hover" rel="external" href="https://www.arizona.edu/information-security-privacy">University Information Security &amp; Privacy</a>
