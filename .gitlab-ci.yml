@@ -1,0 +1,22 @@
+stages:
+  - test
+
+test:
+  stage: test
+  image: node:24
+  before_script:
+    - npm install --global corepack@latest
+    - corepack enable
+    - corepack prepare pnpm@latest-11 --activate
+    - pnpm config set store-dir .pnpm-store
+  script:
+    - pnpm install # install dependencies
+    - pnpm test # run tests
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+    paths:
+      - .pnpm-store
+
+
