@@ -1,10 +1,32 @@
-name: Publish package
+name: Create Release on Tag
 
 on:
-  release:
-    types: [created]
+  push:
+    # Trigger only on semver tags like 1.2.3 (allow prerelease suffixes)
+    tags:
+      - '*.*.*'
+      - '*.*.*-alpha*'
+      - '*.*.*-beta*'
+
+permissions:
+  contents: write
 
 jobs:
+  release:
+    name: Create GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   publish:
     name: Publish
     runs-on: ubuntu-latest
@@ -41,5 +63,4 @@ jobs:
         run: |
           pnpm config set "//npm.pkg.github.com/:_authToken" "${NODE_AUTH_TOKEN}"
           pnpm publish --registry https://npm.pkg.github.com/ --access private --no-git-checks
-
 
