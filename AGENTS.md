@@ -5,7 +5,7 @@
 
 ## Commands
 - `pnpm install` — also runs `prepare` → `parcel build`; install fails if the build fails.
-- `pnpm test` — Jest via `react-scripts test`. Watch mode by default; use `CI=true pnpm test` for a one-shot run and `CI=true pnpm test -- <name>` for a single file (e.g. `logo`).
+- `pnpm test` — Jest via `react-scripts test`. Watch mode by default; use `CI=true pnpm test` for a one-shot run and `CI=true pnpm test <name>` for a single file (e.g. `CI=true pnpm test logo`).
 - `pnpm run example` — Parcel dev server for the example app in `src/example/` (needs its container divs in `example.html`). Outputs to `.example/` (gitignored).
 - `pnpm build` — `parcel build` → `dist/` (gitignored; `main`/`module` in package.json point here).
 - `pnpm lint` — ESLint 9 with neostandard (StandardJS-style, no semicolons, 2-space indent) via flat config in `eslint.config.js`. No typecheck script.

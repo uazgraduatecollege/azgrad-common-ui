@@ -6,7 +6,7 @@
 - Install dependencies with `corepack enable && corepack prepare pnpm@latest-11 --activate && pnpm install`. Installation runs the `prepare` script, which builds the library.
 - Build the distributable with `pnpm build`. Parcel writes the package entry points to `dist/`.
 - Run the test suite once with `CI=true pnpm test`. Without `CI=true`, Jest runs in watch mode.
-- Run one test file with `CI=true pnpm test -- logo` (or another filename/pattern such as `footer` or `search-form`).
+- Run one test file with `CI=true pnpm test logo` (or another filename/pattern such as `footer` or `search-form`). Do not insert `--`; pnpm forwards it to `react-scripts` in a way that breaks test matching.
 - Run the linter with `pnpm lint`. ESLint uses the flat `eslint.config.js` configuration and NeoStandard: StandardJS-style JavaScript, no semicolons, and two-space indentation.
 - Run the example app with `pnpm run example`; it serves `src/example/example.html` and writes generated output to `.example/`.
 

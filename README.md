@@ -7,12 +7,12 @@ especially apps based on [Arizona Bootstrap](https://digital.arizona.edu/arizona
 
 AZ Grad Common UI includes the following components:
 
-- `ArizonaBannner`: The red banner with the UArizona logo for the top of the page
+- `ArizonaBanner`: The red banner with the UArizona logo for the top of the page
 - `Footer`: A fully developed footer for Graduate College websites.
 - `Logo`: Provides a Graduate College logo using any of 3 variants:
   - `grad-lockup-blue`: A logo with "Graduate College" in blue text (default).
-  - `grad-lokup-full-blue`: A logo with University of Arizona _and_ Graduate College in blue text (for light backgrounds).
-  - `grad-lokup-full-white`: A logo with University of Arizona _and_ Graduate College in white text (for dark backgrounds).
+  - `grad-lockup-full-blue`: A logo with University of Arizona _and_ Graduate College in blue text (for light backgrounds).
+  - `grad-lockup-full-white`: A logo with University of Arizona _and_ Graduate College in white text (for dark backgrounds).
 - `SearchForm`: A form that triggers a search on the College's Google Custom Search Engine (CSE). Embedded in the `Footer`.
 
 Common UI also provides 3 image components that can be used in value of an image's `src` attribute.
@@ -24,19 +24,21 @@ These correspond to the `Logo` component's variants.
 
 ## Use Common UI in your own project
 
-First install as a project dependency:
+Install as a project dependency with pnpm:
+
+```sh
+pnpm add uazgraduatecollege/azgrad-common-ui
+```
+
+Or use npm:
 
 ```sh
 npm install --save uazgraduatecollege/azgrad-common-ui
-# or:
-pnpm add uazgraduatecollege/azgrad-common-ui
 ```
 
 Next, install recommended dependencies. These are optional, but should make developing your project a happier experience.
 
 ```sh
-npm install --save-dev parcel process react react-dom react-scripts @testing-library/jest-dom @testing-library/react
-# or:
 pnpm add -D parcel process react react-dom react-scripts @testing-library/jest-dom @testing-library/react
 ```
 
@@ -53,29 +55,42 @@ Run or build your project with [parcel](https://parceljs.org/) or whatever bundl
 ```sh
 git clone git@github.com:uazgraduatecollege/azgrad-common-ui.git
 cd azgrad-common-ui
-npm install
-# or, with pnpm (v11, via corepack):
 corepack enable
+corepack prepare pnpm@latest-11 --activate
 pnpm install
 ```
+
+`pnpm install` also runs the `prepare` script, which builds the library with Parcel.
 
 ## Run the example app
 
 ```sh
-npm run example
-# or:
 pnpm run example
 ```
+
+## Build the library
+
+```sh
+pnpm build
+```
+
+Parcel writes the distributable entry points to `dist/`. The published package contains `dist/` along with its package metadata and documentation.
 
 ## Run tests
 
 ```sh
-npm test
-# or:
 pnpm test
 ```
 
-`npm test` and `pnpm test` runs Jest in watch mode by default; use `CI=true pnpm test` for a one-shot run.
+Jest runs in watch mode by default. Use `CI=true pnpm test` for a one-shot run or `CI=true pnpm test logo` to run tests matching a specific filename or pattern.
+
+## Run the linter
+
+```sh
+pnpm lint
+```
+
+The project uses ESLint 9 with NeoStandard and the flat configuration in `eslint.config.js`.
 
 ## Developed by
 
