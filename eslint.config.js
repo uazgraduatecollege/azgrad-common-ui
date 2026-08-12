@@ -2,7 +2,6 @@ const neostandard = require('neostandard')
 
 const configs = neostandard({
   env: ['browser'],
-  globals: { process: 'readonly' },
   ignores: neostandard.resolveIgnoresFromGitignore()
 }).map((config) => {
   if (config.name === 'neostandard/jsx' || config.name === 'neostandard/style/jsx') {

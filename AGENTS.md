@@ -18,7 +18,7 @@
 - `src/index.js` is the library entrypoint. Public API: `ArizonaBanner`, `Footer`, `Logo`, `SearchForm`, and image components `GradLockupBlue`, `GradLockupFullBlue`, `GradLockupFullWhite`.
 - `src/footer-links.json` is the single source of truth for all footer navigation links.
 - Logo images are base64 data-URLs hardcoded in `src/img/*.js` (the `.png` siblings are the sources) — changing artwork means regenerating the JS modules.
-- `SearchForm` uses `process.env.SEARCH_URI` (defaults to `https://grad.arizona.edu/search`); Parcel inlines env vars at build time.
+- `SearchForm` uses the `SEARCH_URI` environment variable (defaults to `https://grad.arizona.edu/search`); Parcel inlines it at build time.
 - Vitest uses the `jsdom` environment and `vitest.setup.js` loads `@testing-library/jest-dom/vitest`; JSX source files use the `.jsx` extension.
 - Components depend on Arizona Bootstrap 5 styles/JS and icon/font CDNs loaded by the consuming app — see `src/example/example.html` for the required CDN links. `src/style.css` is only a small supplement.
 

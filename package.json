@@ -36,7 +36,6 @@
     "eslint": "^9.0.0",
     "neostandard": "^0.13.0",
     "parcel": "^2.16.4",
-    "process": "^0.11.10",
     "jsdom": "^26.1.0",
     "vitest": "^3.2.4"
   },

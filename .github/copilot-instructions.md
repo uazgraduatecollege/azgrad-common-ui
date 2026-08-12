@@ -16,7 +16,7 @@
 - Components are intentionally presentation-focused. `ArizonaBanner`, `Footer`, and `Logo` render into host-provided DOM containers; `src/example/app.jsx` demonstrates mounting each with React `createRoot`.
 - Consumers must provide the Arizona Bootstrap CSS/JS and Arizona icon/font resources. The required CDN assets and the expected `header-container`, `logo-container`, and `footer-container` elements are documented in `src/example/example.html`.
 - `Footer` composes `Logo` and `SearchForm` and gets all navigation data from `src/footer-links.json`; update that JSON rather than duplicating links in JSX.
-- `SearchForm` uses `process.env.SEARCH_URI`, falling back to `https://grad.arizona.edu/search`. Parcel substitutes this value at build time.
+- `SearchForm` uses the `SEARCH_URI` environment variable, falling back to `https://grad.arizona.edu/search`. Parcel substitutes this value at build time.
 - Logo components use embedded base64 data URLs from `src/img/*.js`. The related PNG files are source artwork; changing artwork requires regenerating the JavaScript image modules rather than editing the data URL by hand.
 - `src/style.css` is only the library's small supplement; it does not replace the consuming site's Arizona Bootstrap styles.
 - Vitest runs in `jsdom`; `vitest.setup.js` loads `@testing-library/jest-dom/vitest`, and JSX source files use the `.jsx` extension.
