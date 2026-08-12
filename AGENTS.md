@@ -14,6 +14,12 @@
 - Published to GitHub Packages (private registry `npm.pkg.github.com`). Do NOT publish manually — push a semver tag (`*.*.*`, `*.*.*-alpha*`, `*.*.*-beta*`); `.github/workflows/release-and-publish-on-tag.yml` creates the release and runs `pnpm publish --registry https://npm.pkg.github.com/`.
 - The published tarball contains only `dist/` (via `files: ["dist"]`) plus package.json/README/LICENSE — `src/` and `.env` are not shipped.
 
+## Deferred dependency work
+- Coordinate with downstream projects before upgrading React, React DOM, or `@testing-library/react` to React 19-compatible versions.
+- Coordinate with downstream projects before upgrading ESLint to 10 and NeoStandard to its stable ESLint 10-compatible release.
+- Revisit the deprecated transitive `whatwg-encoding` package with the Vitest/jsdom upgrade; it is not independently actionable.
+- Arizona Bootstrap `5.1.7` was evaluated and intentionally retained; do not change the CDN assets without a separate compatibility review.
+
 ## Architecture
 - `src/index.js` is the library entrypoint. Public API: `ArizonaBanner`, `Footer`, `Logo`, `SearchForm`, and image components `GradLockupBlue`, `GradLockupFullBlue`, `GradLockupFullWhite`.
 - `src/footer-links.json` is the single source of truth for all footer navigation links.

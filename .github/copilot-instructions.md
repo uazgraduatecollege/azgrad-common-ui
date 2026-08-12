@@ -29,3 +29,4 @@
 - The root `.env` is tracked/not ignored; never add secrets to it. Use `.env.local` for local-only values.
 - Releases are published to GitHub Packages by `.github/workflows/release-and-publish-on-tag.yml` when a semver tag (including alpha/beta prereleases) is pushed. Do not publish manually; the package contains `dist/` plus package metadata and documentation.
 - CI uses Node 24, installs with pnpm, and runs `pnpm test`.
+- Do not begin the deferred React, Testing Library, ESLint, NeoStandard, or `whatwg-encoding` upgrades without coordinating downstream consumers. Arizona Bootstrap `5.1.7` is intentionally retained.
