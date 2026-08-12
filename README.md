@@ -36,17 +36,17 @@ Or use npm:
 npm install --save uazgraduatecollege/azgrad-common-ui
 ```
 
-Next, install recommended dependencies. These are optional, but should make developing your project a happier experience.
+For local development of this repository, install the development dependencies with pnpm:
 
 ```sh
-pnpm add -D parcel process react react-dom react-scripts @testing-library/jest-dom @testing-library/react
+pnpm install
 ```
 
 Use the example app (in `src/example`) as a guide to make use of Common UI components.
 
 1. Create `div`s with IDs `header-container`, `logo-container`, and `footer-container` in your project's main HTML file(s).
-2. Create an `app.js` file that will render the  **ArizonaBanner**, **Logo**, and **Footer** components.
-3. Call `app.js` just before the closing `</body>` tag of the page: `<script src="app.js"></script>`.
+2. Create an entrypoint such as `app.jsx` that renders the **ArizonaBanner**, **Logo**, and **Footer** components.
+3. Call that entrypoint just before the closing `</body>` tag of the page.
 
 Run or build your project with [parcel](https://parceljs.org/) or whatever bundler you're using.
 
@@ -82,7 +82,7 @@ Parcel writes the distributable entry points to `dist/`. The published package c
 pnpm test
 ```
 
-Jest runs in watch mode by default. Use `CI=true pnpm test` for a one-shot run or `CI=true pnpm test logo` to run tests matching a specific filename or pattern.
+Vitest runs the test suite once by default in the `jsdom` environment. The setup file loads Testing Library DOM matchers. Use `pnpm test --watch` for watch mode or `pnpm test logo` to run tests matching a specific filename or pattern.
 
 ## Run the linter
 

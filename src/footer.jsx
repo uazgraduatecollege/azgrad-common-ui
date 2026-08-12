@@ -1,5 +1,6 @@
-import { Logo } from './logo'
-import { SearchForm } from './search-form'
+import React from 'react'
+import { Logo } from './logo.jsx'
+import { SearchForm } from './search-form.jsx'
 import footerLinks from './footer-links.json'
 import './style.css'
 

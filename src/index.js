@@ -1,7 +1,7 @@
-import { ArizonaBanner } from './arizonabanner'
-import { Footer } from './footer'
-import { Logo } from './logo'
-import { SearchForm } from './search-form'
+import { ArizonaBanner } from './arizonabanner.jsx'
+import { Footer } from './footer.jsx'
+import { Logo } from './logo.jsx'
+import { SearchForm } from './search-form.jsx'
 import { GradLockupBlue, GradLockupFullBlue, GradLockupFullWhite } from './img/images'
 
 export {

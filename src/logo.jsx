@@ -1,3 +1,4 @@
+import React from 'react'
 import { GradLockupBlue, GradLockupFullBlue, GradLockupFullWhite } from './img/images'
 
 export function Logo (props) {

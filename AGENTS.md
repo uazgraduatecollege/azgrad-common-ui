@@ -5,7 +5,7 @@
 
 ## Commands
 - `pnpm install` — also runs `prepare` → `parcel build`; install fails if the build fails.
-- `pnpm test` — Jest via `react-scripts test`. Watch mode by default; use `CI=true pnpm test` for a one-shot run and `CI=true pnpm test <name>` for a single file (e.g. `CI=true pnpm test logo`).
+- `pnpm test` — Vitest one-shot test run. Use `pnpm test --watch` for watch mode and `pnpm test logo` for a single file or pattern.
 - `pnpm run example` — Parcel dev server for the example app in `src/example/` (needs its container divs in `example.html`). Outputs to `.example/` (gitignored).
 - `pnpm build` — `parcel build` → `dist/` (gitignored; `main`/`module` in package.json point here).
 - `pnpm lint` — ESLint 9 with neostandard (StandardJS-style, no semicolons, 2-space indent) via flat config in `eslint.config.js`. No typecheck script.
@@ -19,6 +19,7 @@
 - `src/footer-links.json` is the single source of truth for all footer navigation links.
 - Logo images are base64 data-URLs hardcoded in `src/img/*.js` (the `.png` siblings are the sources) — changing artwork means regenerating the JS modules.
 - `SearchForm` uses `process.env.SEARCH_URI` (defaults to `https://grad.arizona.edu/search`); Parcel inlines env vars at build time.
+- Vitest uses the `jsdom` environment and `vitest.setup.js` loads `@testing-library/jest-dom/vitest`; JSX source files use the `.jsx` extension.
 - Components depend on Arizona Bootstrap 5 styles/JS and icon/font CDNs loaded by the consuming app — see `src/example/example.html` for the required CDN links. `src/style.css` is only a small supplement.
 
 ## Conventions & gotchas
@@ -26,4 +27,4 @@
 - `src/scratch.footer.js` is gitignored scratch (`scratch.*` pattern) — not source; don't commit or edit.
 - `.env` at repo root is NOT gitignored (only `.env.local` is) — never add secrets to it.
 - `dist/`, `.example/`, `.parcel-cache/` are build artifacts, all gitignored.
-- CI: `.gitlab-ci.yml` runs `pnpm install` + `pnpm test` on node:24 (CI providers set `CI=true`, which keeps Jest out of watch mode).
+- CI: `.gitlab-ci.yml` runs `pnpm install` + `pnpm test` on node:24.

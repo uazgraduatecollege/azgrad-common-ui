@@ -1,3 +1,4 @@
+import React from 'react'
 export function SearchForm () {
   const searchAction = process.env.SEARCH_URI || 'https://grad.arizona.edu/search'
 

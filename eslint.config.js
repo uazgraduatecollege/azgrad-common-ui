@@ -7,7 +7,7 @@ const configs = neostandard({
 }).map((config) => {
   if (config.name === 'neostandard/jsx' || config.name === 'neostandard/style/jsx') {
     const { ignores, ...rest } = config
-    return { ...rest, files: ['**/*.js'] }
+    return { ...rest, files: ['**/*.{js,jsx}'] }
   }
   return config
 })
@@ -21,7 +21,7 @@ module.exports = [
     }
   },
   {
-    files: ['src/__tests__/**/*.js'],
+    files: ['src/__tests__/**/*.{js,jsx}'],
     rules: {
       'no-undef': 'off'
     }
