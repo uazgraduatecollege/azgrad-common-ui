@@ -52,11 +52,13 @@ Run or build your project with [parcel](https://parceljs.org/) or whatever bundl
 
 ## Install & develop locally
 
+Development requires Node.js 24 or newer and pnpm 11. The repository pins pnpm through Corepack.
+
 ```sh
 git clone git@github.com:uazgraduatecollege/azgrad-common-ui.git
 cd azgrad-common-ui
 corepack enable
-corepack prepare pnpm@latest-11 --activate
+corepack prepare pnpm@11.15.1 --activate
 pnpm install
 ```
 

@@ -1,7 +1,7 @@
 # AGENTS.md
 
 ## Package manager
-- Use **pnpm** (v11, via corepack) — `npm` commands do not match the repo. `pnpm-lock.yaml` is the lockfile. README's `npm install` instructions are stale.
+- Use **pnpm 11** (via Corepack) with **Node.js 24 or newer** — `npm` commands do not match the repo. `pnpm-lock.yaml` is the lockfile. README's npm install instructions are for consumers and are not the repository workflow.
 
 ## Commands
 - `pnpm install` — also runs `prepare` → `parcel build`; install fails if the build fails.
