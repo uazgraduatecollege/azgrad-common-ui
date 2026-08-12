@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { createRoot } from 'react-dom/client'
 
 /**
@@ -16,7 +15,7 @@ headerRoot.render(<ArizonaBanner />)
 
 const logo = document.getElementById('logo-container')
 const logoRoot = createRoot(logo)
-logoRoot.render(<Logo variant="blue" className="img-fluid" />)
+logoRoot.render(<Logo variant='blue' className='img-fluid' />)
 
 const footer = document.getElementById('footer-container')
 const footerRoot = createRoot(footer)
