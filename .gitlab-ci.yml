@@ -11,7 +11,7 @@ test:
     - pnpm config set store-dir .pnpm-store
   script:
     - pnpm install # install dependencies
-    - pnpm CI=true test # run tests
+    - CI=true pnpm test # run tests
   cache:
     key:
       files:
