@@ -1,4 +1,4 @@
-name: Create Release on Tag
+name: Create Release and Publish on Tag
 
 on:
   push:
@@ -52,10 +52,10 @@ jobs:
           cache: "pnpm"
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Run tests
-        run: pnpm test
+        run: CI=true pnpm test
 
       - name: Publish to Github Packages
         env:

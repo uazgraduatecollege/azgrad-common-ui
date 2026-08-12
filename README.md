@@ -28,12 +28,16 @@ First install as a project dependency:
 
 ```sh
 npm install --save uazgraduatecollege/azgrad-common-ui
+# or:
+pnpm add uazgraduatecollege/azgrad-common-ui
 ```
 
 Next, install recommended dependencies. These are optional, but should make developing your project a happier experience.
 
 ```sh
 npm install --save-dev parcel process react react-dom react-scripts @testing-library/jest-dom @testing-library/react
+# or:
+pnpm add -D parcel process react react-dom react-scripts @testing-library/jest-dom @testing-library/react
 ```
 
 Use the example app (in `src/example`) as a guide to make use of Common UI components.
@@ -47,22 +51,31 @@ Run or build your project with [parcel](https://parceljs.org/) or whatever bundl
 ## Install & develop locally
 
 ```sh
-git clone git@github.com/uazgraduatecollege/azgrad-common-ui.git
+git clone git@github.com:uazgraduatecollege/azgrad-common-ui.git
 cd azgrad-common-ui
 npm install
+# or, with pnpm (v11, via corepack):
+corepack enable
+pnpm install
 ```
 
 ## Run the example app
 
 ```sh
 npm run example
+# or:
+pnpm run example
 ```
 
 ## Run tests
 
 ```sh
 npm test
+# or:
+pnpm test
 ```
+
+`npm test` and `pnpm test` runs Jest in watch mode by default; use `CI=true pnpm test` for a one-shot run.
 
 ## Developed by
 
