@@ -1,8 +1,9 @@
+import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { SearchForm } from '../index'
+import { Footer } from '../index'
 
 it('renders without crashing', () => {
   const div = document.createElement('div')
   const root = createRoot(div)
-  root.render(<SearchForm />)
+  root.render(<Footer />)
 })

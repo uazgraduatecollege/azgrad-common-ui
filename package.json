@@ -14,11 +14,18 @@
   ],
   "main": "dist/main.js",
   "module": "dist/module.js",
+  "files": ["dist"],
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11 <12"
+  },
+  "packageManager": "pnpm@11.15.1",
   "scripts": {
     "build": "parcel build",
     "example": "parcel --dist-dir .example src/example/example.html",
+    "lint": "eslint .",
     "prepare": "parcel build",
-    "test": "react-scripts test"
+    "test": "vitest run"
   },
   "contributors": [
     "Patrick Barabe <pbarabe@arizona.edu>"
@@ -29,17 +36,13 @@
   },
   "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.2",
-    "eslint": "^8.57.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.0.1",
-    "eslint-plugin-react": "^7.34.1",
-    "parcel": "^2.9.3",
-    "process": "^0.11.10",
-    "react-scripts": "^5.0.1"
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^14.3.1",
+    "eslint": "^9.39.5",
+    "neostandard": "^0.13.0",
+    "parcel": "^2.16.4",
+    "jsdom": "^26.1.0",
+    "vitest": "^3.2.7"
   },
   "dependencies": {
     "react": "^18.2.0",
