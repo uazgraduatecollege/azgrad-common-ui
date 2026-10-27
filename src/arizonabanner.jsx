@@ -25,7 +25,7 @@ export function ArizonaBanner (props) {
           >
             <img
               className='arizona-line-logo'
-              alt='The University of Arizona Wordmark Line Logo White'
+              alt='The University of Arizona Wordmark Line Logo'
               src='https://cdn.digital.arizona.edu/logos/v1.0.0/ua_wordmark_line_logo_white_rgb.min.svg'
             />
           </a>
