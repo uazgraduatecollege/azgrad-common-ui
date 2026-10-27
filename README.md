@@ -7,7 +7,9 @@ especially apps based on [Arizona Bootstrap](https://digital.arizona.edu/arizona
 
 AZ Grad Common UI includes the following components:
 
-- `ArizonaBanner`: The red banner with the UArizona logo for the top of the page
+- `ArizonaBanner`: Provides a banner with the UArizona logo for the top of the page using one of 2 variants:
+  - `text-bg-blue`: The blue banner (default).
+  - `text-bg-red`: The red banner.
 - `Footer`: A fully developed footer for Graduate College websites.
 - `Logo`: Provides a Graduate College logo using any of 3 variants:
   - `grad-lockup-blue`: A logo with "Graduate College" in blue text (default).
