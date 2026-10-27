@@ -2,8 +2,8 @@
 
 ## Build, test, and lint
 
-- Use Node.js 24 or newer and pnpm 11 through Corepack. `pnpm-lock.yaml` is authoritative; prefer pnpm over the consumer npm example in `README.md`.
-- Install dependencies with `corepack enable && corepack prepare pnpm@11.15.1 --activate && pnpm install`. Installation runs the `prepare` script, which builds the library.
+- Use Node.js 24 or newer and pnpm 12 through Corepack. `pnpm-lock.yaml` is authoritative; prefer pnpm over the consumer npm example in `README.md`.
+- Install dependencies with `corepack enable && corepack install && pnpm install`. Corepack reads the pnpm version from `package.json`; installation runs the `prepare` script, which builds the library.
 - Build the distributable with `pnpm build`. Parcel writes the package entry points to `dist/`.
 - Run the test suite once with `pnpm test`.
 - Run one test file with `pnpm test logo` (or another filename/pattern such as `footer` or `search-form`). Use `pnpm test --watch` for watch mode.
