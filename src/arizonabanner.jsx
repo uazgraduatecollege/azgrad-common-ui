@@ -1,9 +1,21 @@
 import React from 'react'
 import './style.css'
 
-export function ArizonaBanner () {
+export function ArizonaBanner (props) {
+  let headerClassName = ''
+
+  switch (props.variant) {
+    case 'red':
+      headerClassName = 'text-bg-red arizona-header'
+      break
+
+    case 'blue':
+    default:
+      headerClassName = 'text-bg-blue arizona-header'
+  }
+
   return (
-    <header className='text-bg-red arizona-header' id='header_arizona'>
+    <header className={ headerClassName } id='header_arizona'>
       <div className='container'>
         <div className='row'>
           <a
