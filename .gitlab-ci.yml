@@ -7,7 +7,7 @@ test:
   before_script:
     - npm install --global corepack@latest
     - corepack enable
-    - corepack prepare pnpm@11.15.1 --activate
+    - corepack install
     - pnpm config set store-dir .pnpm-store
   script:
     - pnpm install --frozen-lockfile # install dependencies
