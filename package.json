@@ -14,21 +14,33 @@
   ],
   "main": "dist/main.js",
   "module": "dist/module.js",
-  "files": ["dist"],
+  "targets": {
+    "example": {
+      "source": "src/example/example.html",
+      "distDir": ".example",
+      "context": "browser"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "engines": {
     "node": ">=24",
     "pnpm": ">=11 <12"
   },
-  "packageManager": "pnpm@11.15.1",
+  "packageManager": "pnpm@12.15.0",
   "scripts": {
     "build": "parcel build",
-    "example": "parcel --dist-dir .example src/example/example.html",
+    "example": "parcel serve --target example",
+    "preexample": "rm -rf .parcel-cache .example",
     "lint": "eslint .",
     "prepare": "parcel build",
     "test": "vitest run"
   },
   "contributors": [
-    "Patrick Barabe <pbarabe@arizona.edu>"
+    "Patrick Barabe <pbarabe@arizona.edu>",
+    "Annie Prisbrey <abrisbrey@arizona.edu>",
+    "Ratish Shrestha <ratish@arizona.edu>"
   ],
   "bugs": {
     "url": "https://gitlab.grad.arizona.edu/web-utils/ui/azgrad-common-ui/-/issues",
@@ -39,9 +51,9 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^14.3.1",
     "eslint": "^9.39.5",
+    "jsdom": "^26.1.0",
     "neostandard": "^0.13.0",
     "parcel": "^2.16.4",
-    "jsdom": "^26.1.0",
     "vitest": "^3.2.7"
   },
   "dependencies": {
