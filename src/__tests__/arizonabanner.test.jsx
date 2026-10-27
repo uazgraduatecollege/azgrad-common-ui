@@ -16,7 +16,7 @@ it.each([
 it('renders the Arizona wordmark link', () => {
   render(<ArizonaBanner />)
 
-  const link = screen.getByRole('link', { name: 'The University of Arizona Wordmark Line Logo White' })
+  const link = screen.getByRole('link', { name: 'The University of Arizona Wordmark Line Logo' })
   expect(link).toHaveAttribute('href', 'http://www.arizona.edu')
   expect(link).toHaveAttribute('title', 'The University of Arizona homepage')
   expect(screen.getByRole('banner')).toHaveAttribute('id', 'header_arizona')
