@@ -53,6 +53,12 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Run tests
+        run: pnpm build
+
+      - name: Verify build output
+        run: test -f dist/main.js && test -f dist/module.js
+
+      - name: Run tests
         run: pnpm test
 
       - name: Publish to Github Packages
