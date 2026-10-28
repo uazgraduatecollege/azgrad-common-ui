@@ -4,14 +4,15 @@
 - Use **pnpm 12** (via Corepack) with **Node.js 24 or newer** — `npm` commands do not match the repo. `pnpm-lock.yaml` is the lockfile. README's npm install instructions are for consumers and are not the repository workflow.
 
 ## Commands
-- `pnpm install` — also runs `prepare` → `parcel build`; install fails if the build fails.
+- `pnpm install` — also runs `prepare`, which builds the library with `parcel build --target main --target module`; install fails if the build fails.
 - `pnpm test` — Vitest one-shot test run. Use `pnpm test --watch` for watch mode and `pnpm test logo` for a single file or pattern.
-- `pnpm run example` — Parcel dev server for the example app in `src/example/` (needs its container divs in `example.html`). Outputs to `.example/` (gitignored).
-- `pnpm build` — `parcel build` → `dist/` (gitignored; `main`/`module` in package.json point here).
+- `pnpm run example` — Parcel dev server for the example app in `src/example/` (needs its container divs in `example.html`). Uses the `example` target and outputs to `.example/` (gitignored).
+- `pnpm build` — builds only the `main` and `module` Parcel targets with `parcel build --target main --target module`, producing the library in `dist/` (gitignored).
 - `pnpm lint` — ESLint 9 with neostandard (StandardJS-style, no semicolons, 2-space indent) via flat config in `eslint.config.js`. No typecheck script.
 
 ## Releases
 - Published to GitHub Packages (private registry `npm.pkg.github.com`). Do NOT publish manually — push a semver tag (`*.*.*`, `*.*.*-alpha*`, `*.*.*-beta*`); `.github/workflows/release-and-publish-on-tag.yml` creates the release and runs `pnpm publish --registry https://npm.pkg.github.com/`.
+- The release workflow explicitly builds and verifies `dist/main.js` and `dist/module.js`, then runs `pnpm pack --dry-run` before publishing.
 - The published tarball contains only `dist/` (via `files: ["dist"]`) plus package.json/README/LICENSE — `src/` and `.env` are not shipped.
 
 ## Deferred dependency work
