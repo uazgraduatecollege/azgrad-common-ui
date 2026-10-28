@@ -50,7 +50,14 @@ jobs:
           cache: "pnpm"
 
       - name: Set package version from tag
-        run: pnpm version "${GITHUB_REF_NAME}" --no-git-tag-version
+        env:
+          RELEASE_VERSION: ${{ github.ref_name }}
+        run: node -e "const fs=require('fs'); const p='package.json'; const pkg=JSON.parse(fs.readFileSync(p, 'utf8')); pkg.version=process.env.RELEASE_VERSION; fs.writeFileSync(p, JSON.stringify(pkg, null, 2) + '\n')"
+
+      - name: Verify package version
+        env:
+          RELEASE_VERSION: ${{ github.ref_name }}
+        run: test "$(node -p \"require('./package.json').version\")" = "$RELEASE_VERSION"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
