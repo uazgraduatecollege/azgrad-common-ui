@@ -11,8 +11,9 @@
 - `pnpm lint` — ESLint 9 with neostandard (StandardJS-style, no semicolons, 2-space indent) via flat config in `eslint.config.js`. No typecheck script.
 
 ## Releases
-- Published to GitHub Packages (private registry `npm.pkg.github.com`). Do NOT publish manually — push a semver tag (`*.*.*`, `*.*.*-alpha*`, `*.*.*-beta*`); `.github/workflows/release-and-publish-on-tag.yml` creates the release and runs `pnpm publish --registry https://npm.pkg.github.com/`.
-- The release workflow explicitly builds and verifies `dist/main.js` and `dist/module.js`, then runs `pnpm pack --dry-run` before publishing.
+- Published to GitHub Packages (private registry `npm.pkg.github.com`). Do NOT publish manually — push a semver tag (`X.Y.Z`, `X.Y.Z-alpha*`, `X.Y.Z-beta*`, `X.Y.Z-rc*`); `.github/workflows/release-and-publish-on-tag.yml` publishes first, then creates the GitHub release (only if publish succeeds). The registry comes from `publishConfig` in `package.json`, not a `--registry` flag.
+- Prerelease tags publish under their own dist-tag (`alpha`, `beta`, `rc`) and are marked as prereleases on GitHub; only stable tags publish to `latest`.
+- The release workflow explicitly builds and verifies `dist/main.js` and `dist/module.js`, then runs `pnpm pack --dry-run` and `pnpm test` before publishing.
 - The published tarball contains only `dist/` (via `files: ["dist"]`) plus package.json/README/LICENSE — `src/` and `.env` are not shipped.
 
 ## Deferred dependency work
